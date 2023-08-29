@@ -32,11 +32,13 @@ const Wowzer = (): JSX.Element => {
     }
   }, [loadWow]);
 
+  // When user input changes, check if wow was typed
+  // Uses WebAssembly module to call C++ function 'checkForWow'
   const handleChange = async (text: string) => {
     if (!wasm) {
       setError(true);
     } else {
-      if (wasm.checkForWow(text)) {
+      if (wasm.checkForWow(text.toLowerCase())) {
         setLoadWow(true);
       }
     }
