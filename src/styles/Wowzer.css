@@ -1,0 +1,10 @@
+.wowzer__textarea {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.wowzer__error-text {
+  text-align: center;
+  color: red;
+}

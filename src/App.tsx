@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Wowzer from "./components/Wowzer";
+import "./styles/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <div className="App-header">
+        <h1 className="App-title">Wowzer App</h1>
+      </div>
+      <div className="App-subtitle">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Powered by{" "}
+          <a href="https://owen-wilson-wow-api.onrender.com">
+            The Owen Wilson Wow API
+          </a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+      <Wowzer />
+    </>
   );
 }
 

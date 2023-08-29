@@ -1,0 +1,1 @@
+emcc -lembind -o wow-logic.js wow-logic.cpp -s EXPORTED_RUNTIME_METHODS="['ccall', 'cwrap']" -s EXPORT_ES6=1 -s ENVIRONMENT='web'
